@@ -838,9 +838,45 @@ a.info_right_text{
 
 
 /* Home Page Three CSS */
+li {
+  display: inline-block;
+  font-size: 1.3em;
+  color: #000000;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
 
-.bbggimage{
-	background-image: url(../images/headbg.jpg);
-	background-size:100% 100%;
+li span {
+  display: block;
+  font-size: 4rem;
+  color: #000000;
+}
 
+.message {
+  font-size: 4rem;
+}
+
+#content {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji {
+  padding: 0 .25rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  
+  li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  
+  li span {
+    font-size: 3.375rem;
+  }
 }

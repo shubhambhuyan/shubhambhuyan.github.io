@@ -63,6 +63,7 @@
                 <li class=""><a href="#zone-move-in" title="Move In">5</a></li>
                 <li class=""><a href="#zone-proposal" title="Proposal">6</a></li>
                 <li class=""><a href="#zone-marriage" title="Marriage">7</a></li>
+				<li class=""><a href="#zone-countdown" title="Marriage">8</a></li>
             </ul>
         </nav>
 
@@ -109,12 +110,58 @@
             <p class="left" style="margin-left: -1800px;"><strong title="Hint: Julia wears a white dress!">You must have already guessed!</strong>Our wedding is taking place on 9th of May 2021. Such great news, yep?;-)</p>
             <div id="slowpoke" class="soaring"></div>
         </div>
+		
+		<div id="zone-countdown" class="moment">
+            <p class="right" style="margin-right: 0px;"><strong>Countdown : </strong>
+				<span id="days"></span> Days
+				<span id="hours"></span> Hours
+				<span id="minutes"></span> Minutes
+				<span id="seconds"></span> Seconds
+			</p>
+			<div id="countdown-timer"></div>
+        </div>
 
         <footer>
             <div id="the-cake"></div>
             <div id="party"></div>
             <p>Design by <a href="#" title="bhavana">the bride</a>, programming by <a href="#" title="shubham">the groom</a>.</p>
         </footer>
+		
+		<script>
+		(function () {
+		const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+		  let birthday = "May 09, 2021 09:00:00",
+			  countDown = new Date(birthday).getTime(),
+			  x = setInterval(function() {    
+
+				let now = new Date().getTime(),
+					distance = countDown - now;
+
+				document.getElementById("days").innerText = Math.floor(distance / (day)),
+				  document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+				  document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+				  document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+				//do something later when date is reached
+				if (distance < 0) {
+				  let headline = document.getElementById("headline"),
+					  countdown = document.getElementById("countdown"),
+					  content = document.getElementById("content");
+
+				  headline.innerText = "It's our wedding!";
+				  countdown.style.display = "none";
+				  content.style.display = "block";
+
+				  clearInterval(x);
+				}
+				//seconds
+			  }, 0)
+		  }());
+		</script>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="./sources/jquery.min.js"></script>

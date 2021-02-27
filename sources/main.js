@@ -168,6 +168,7 @@ $(document).ready(function() {
     "zone-move-in" : new MoveInZone($("#zone-move-in")),
     "zone-proposal" : new ProposalZone($("#zone-proposal")),
     "zone-marriage" : new MarriageZone($("#zone-marriage")),
+	"zone-countdown" : new MarriageZone($("#zone-countdown")),
   }
 
   $.each(zoneControllers, function(index, controller) {

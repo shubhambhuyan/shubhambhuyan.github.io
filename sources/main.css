@@ -510,6 +510,16 @@ html.no-touch nav ul li:hover {
     background: url('../img/slowpoke.png') no-repeat;
 }
 
+#countdown-timer {
+    position: absolute;
+    left: 0px;
+    top: 42%;
+    width: 120px;
+    height: 132px;
+    background: url('../img/countdowntimer.png') no-repeat;
+    z-index: 200;
+}
+
 .lightning {
     width: 52px;
     height: 248px;
@@ -812,6 +822,11 @@ html.no-touch nav ul li:hover {
   #slowpoke {
     background-image: url('../img/slowpoke@2x.png');
     background-size: 116px 241px;
+  }
+  
+  #countdown-timer {
+    background-image: url('../img/countdowntimer.png');
+    background-size: 120px 132px;
   }
 }
 

@@ -132,6 +132,20 @@ var MarriageZone = function($element) {
   }
 }
 
+var CountdownZone = function($element) {
+  var that = this;
+  var $text = $element.find("p");
+
+  this.moveIn = function() {
+    $text.each(animationMethods.slideInFromTheSide());
+    $element.each(animationMethods.selectNavItem);
+  }
+
+  this.moveOut = function() {
+    $text.each(animationMethods.slideBackToTheSide());
+  }
+}
+
 $(document).ready(function() {
   var RAISE_THRESHOLD = 950;
   var DESCENT_THRESHOLD = 240;
@@ -168,7 +182,8 @@ $(document).ready(function() {
     "zone-move-in" : new MoveInZone($("#zone-move-in")),
     "zone-proposal" : new ProposalZone($("#zone-proposal")),
     "zone-marriage" : new MarriageZone($("#zone-marriage")),
-	"zone-countdown" : new MarriageZone($("#zone-countdown")),
+	"zone-countdown" : new CountdownZone($("#zone-countdown")),
+	"zone-last" : new MarriageZone($("#zone-last")),
   }
 
   $.each(zoneControllers, function(index, controller) {

@@ -374,7 +374,7 @@ header .year {
 }
 
 header .bride {
-    left: 270px;
+    left: 250px;
     -webkit-transform: rotate(353deg);
     -moz-transform: rotate(353deg);
     -o-transform: rotate(353deg);
@@ -513,9 +513,9 @@ html.no-touch nav ul li:hover {
 #countdown-timer {
     position: absolute;
     left: 0px;
-    top: 42%;
-    width: 120px;
-    height: 132px;
+    top: 35%;
+    width: 167px;
+    height: 190px;
     background: url('../img/countdowntimer.png') no-repeat;
     z-index: 200;
 }
@@ -575,6 +575,7 @@ html.no-touch nav ul li:hover {
 .moment p.scroll-hint {
     color: #FAFDFC;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
+	font-size: 1.2em;
     background: url('../img/arrow.png') right 0px no-repeat;
     padding-right: 17px;
     width: 100px;
@@ -826,7 +827,7 @@ html.no-touch nav ul li:hover {
   
   #countdown-timer {
     background-image: url('../img/countdowntimer.png');
-    background-size: 120px 132px;
+    background-size: 167px 190px;
   }
 }
 

@@ -278,7 +278,7 @@ footer p {
     margin-left: 350px;
     bottom: 15px;
     color: #677435;
-    font-size: 0.8em
+    font-size: 1em
 }
 
 footer p a, footer p a:active, footer p a:visited, footer p a:hover {
@@ -302,7 +302,7 @@ footer p a:hover {
 
 #language-switcher a, #language-switcher a:visited, #language-switcher a:active {
     color: #A3A5A5;
-    font-size: 0.8em;
+    font-size: 1em;
     text-decoration: none;
     padding: 0 10px;
 }
@@ -568,14 +568,14 @@ html.no-touch nav ul li:hover {
     position: absolute;
     width: 250px;
     top: 20%;
-    z-index: 10;
+    z-index: 200;
     color: #666666;
 }
 
 .moment p.scroll-hint {
     color: #FAFDFC;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
-	font-size: 1.2em;
+	font-size: 1.5em;
     background: url('../img/arrow.png') right 0px no-repeat;
     padding-right: 17px;
     width: 100px;
@@ -589,7 +589,7 @@ html.no-touch nav ul li:hover {
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     margin-top: 150px;
     margin-bottom: 13px;
-    font-size: 1.5em;
+    font-size: 1.7em;
     line-height: 1em;
     font-weight: 300;
     display: block;

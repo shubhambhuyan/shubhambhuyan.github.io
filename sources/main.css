@@ -609,7 +609,7 @@ html.no-touch nav ul li:hover {
 @media (max-width:700px){
 	.moment p {
 		position: absolute;
-		width: 21em;
+		width: 25em;
 		top: 20%;
 		z-index: 200;
 		color: #666666;
@@ -617,7 +617,7 @@ html.no-touch nav ul li:hover {
 	.moment p.scroll-hint {
 		color: #FAFDFC;
 		font-family: "Sreda", "Georgia", "Times New Roman", serif;
-		font-size: 3em;
+		font-size: 2.5em;
 		background: url('../img/arrow.png') right 0px no-repeat;
 		padding-right: 2em;
 		width: 100px;
@@ -626,7 +626,7 @@ html.no-touch nav ul li:hover {
 		-webkit-animation: drumming-up 0.8s linear infinite;
 		-moz-animation: drumming-up 0.8s linear infinite;
 	}
-	
+
 	.moment p.scroll-hint {
 		background-image: url('../img/arrow@2x.png');
 		background-size: 1em 1.5em;
@@ -636,14 +636,14 @@ html.no-touch nav ul li:hover {
 		font-family: "Sreda", "Georgia", "Times New Roman", serif;
 		margin-top: 150px;
 		margin-bottom: 13px;
-		font-size: 3.5em;
+		font-size: 3em;
 		line-height: 1em;
 		font-weight: 300;
 		display: block;
 		color: #F26A47;
 	}
 	.moment p span {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 }
 

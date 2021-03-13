@@ -566,7 +566,7 @@ html.no-touch nav ul li:hover {
 
 .moment p {
     position: absolute;
-    width: 250px;
+    width: 18em;
     top: 20%;
     z-index: 200;
     color: #666666;
@@ -606,8 +606,53 @@ html.no-touch nav ul li:hover {
     /*margin-left: 50px;*/
 }
 
+@media (max-width:700px){
+	.moment p {
+		position: absolute;
+		width: 21em;
+		top: 20%;
+		z-index: 200;
+		color: #666666;
+	}
+	.moment p.scroll-hint {
+		color: #FAFDFC;
+		font-family: "Sreda", "Georgia", "Times New Roman", serif;
+		font-size: 3em;
+		background: url('../img/arrow.png') right 0px no-repeat;
+		padding-right: 2em;
+		width: 100px;
+		animation: drumming-up 0.8s linear infinite;
+		-o-animation: drumming-up 0.8s linear infinite;
+		-webkit-animation: drumming-up 0.8s linear infinite;
+		-moz-animation: drumming-up 0.8s linear infinite;
+	}
+	
+	.moment p.scroll-hint {
+		background-image: url('../img/arrow@2x.png');
+		background-size: 1em 1.5em;
+	}
+
+	.moment p strong {
+		font-family: "Sreda", "Georgia", "Times New Roman", serif;
+		margin-top: 150px;
+		margin-bottom: 13px;
+		font-size: 3.5em;
+		line-height: 1em;
+		font-weight: 300;
+		display: block;
+		color: #F26A47;
+	}
+	.moment p span {
+		font-size: 2.5em;
+	}
+}
+
 #zone-in-love p {
     background: 85% 35% url('../img/leaves.png') no-repeat;
+}
+
+#seconds {
+	color: #F26A47;
 }
 
 .cloud {
@@ -729,11 +774,6 @@ html.no-touch nav ul li:hover {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-
-  .moment p.scroll-hint {
-    background-image: url('../img/arrow@2x.png');
-    background-size: 17px 29px;
-  }
 
   #balloon {
     background-image: url('../img/balloon@2x.png');
